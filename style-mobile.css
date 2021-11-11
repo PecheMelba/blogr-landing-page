@@ -1,0 +1,269 @@
+@import url('https://fonts.googleapis.com/css?family=Overpass&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Ubuntu&display=swap');
+*
+{
+    margin:0;
+    padding:0;
+}
+body{width:auto; height: auto;}
+
+/* -------------header--------------- */
+header
+{    
+    background: url("images/bg-pattern-intro.svg")  no-repeat  35% 35% / 350vw auto, linear-gradient(90deg,hsl(13,100%,72%) 0%, hsl(353,100%,62%) 80%);    
+    border-radius: 0 0 0 4em;
+    width: 100%;
+}
+#menu-pannel
+{    
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3em 1.5em;
+}
+#menu-logo
+{
+    width:20%;
+}
+#menu-hamburger,#menu-close-button
+{
+    width:8%;
+    height:100%;
+}
+#menu, #menu-close-button{display: none;}
+#menu
+{
+    position: absolute;
+    top:5em;
+
+    display: none;
+    text-align: center;
+    background-color: white;
+    width:87.5%;
+    border-radius:0.5em;
+    box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.507);
+    font-family: "Overpass";
+    font-weight: 600;
+    padding-top: 0.8em;
+}
+.menu-category
+{
+    margin: 1em 0 1em 0;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.category-title
+{
+    margin: 0.5em 0.4em;
+    pointer-events: none;
+}
+.category-arrow
+{
+    width:10px;
+    height:7px;
+    pointer-events: none;
+}
+#separator
+{    
+    border: 1px rgb(228, 228, 228) solid;
+    width:85%;    
+    margin: 0 auto 2em auto;
+}
+#login-btn
+{
+    margin: 0 auto 1em auto;
+}
+#sign-btn
+{
+    background:linear-gradient(90deg,hsl(13,100%,72%) 0%, hsl(353,100%,62%) 80%);
+    color:white;
+    border-radius:1.7em;
+    width:35%;
+    padding: 0.6em 0;    
+    margin: 0 auto 2em auto;
+}
+.sub-menu
+{
+    display: none;
+    width:90%;
+    height:auto;
+    padding: 1em 0 1em 0;
+    margin:0 auto;
+    text-align: center;
+    background-color: rgb(228, 228, 228);
+}
+.sub-menu div
+{
+    margin:1em 0 1em 0;
+}
+/* -------------------intro-------------- */
+#intro-pannel
+{
+    font-family: "Overpass";
+    text-align: center;
+    width:75%;
+    color: white;
+    margin: 0 auto;
+}
+#intro-title
+{
+    font-weight: 300;
+    padding: 2em 0 0.5em 0;
+}
+#intro-subtext
+{
+    font-weight: 300;
+    padding: 0em 0 2em 0;   
+    color: rgba(255, 255, 255, 0.795);
+}
+#intro-buttons-pannel
+{
+    padding-bottom: 8em;
+    display:flex;
+    justify-content: space-around;
+}
+#intro-start,#intro-learn-more
+{
+    padding:0.8em 0em;
+    width:8em;
+    border-radius: 2em;
+    font-size: 0.8em;
+    line-height: 1.5;  
+    font-weight: 600;
+}
+#intro-start
+{
+    background-color: white;
+    color: hsl(353, 100%, 62%); 
+}
+#intro-learn-more
+{
+    border:1px solid white;
+}
+
+/* -------------section1--------------- */
+#editor-pannel
+{
+    font-family: "Overpass";
+    width:90%;
+    margin: 0 auto;
+    text-align: center;
+    overflow: hidden;
+}
+#editor-pannel h2
+{
+    margin:2em 0 2em 0;
+}
+#editor-content
+{
+    display:flex;
+    flex-direction: column-reverse;
+}
+.text-part
+{
+    margin:2em 0 2em 0;
+}
+.img-section
+{
+    margin: 0 auto;
+    width: 120%;
+    transform: translate(-9.1vw,0);
+}
+.container-text-title
+{
+    font-size: 1.5em;
+    color:hsl(208, 49%, 24%);
+    width:70%;
+    margin: 0 auto 1em auto;
+}
+.container-text-p
+{
+    color:hsla(209, 32%, 30%, 0.795);
+    width:90%;
+    line-height: 1.6;
+    margin: 0 auto 2.5em auto;
+}
+/* -----------section2---------- */
+#second-pannel
+{
+    background: hsl(242, 17%, 29%) url("images/bg-pattern-circles.svg") 55% -390% / 145% auto no-repeat;
+    border-radius: 0em 7em 0 7em;
+    margin-top: 11em;
+    height:90vh;
+    color:white;
+    font-family: "Overpass";
+    text-align: center;
+    margin-bottom: 3em;
+}
+#phones
+{
+    transform: translate(0em, -11.5em);
+    margin: 0 auto;
+    width: 100%;
+}
+#second-text-container
+{
+    transform: translate(0em, -11.5em);
+}
+#second-title
+{
+    margin: 0 auto;
+    padding-bottom: 0.6em;
+    width:80%;
+    font-size: 2.3em;
+    font-weight: 300;
+}
+#second-p
+{
+    margin: 0 auto;    
+    line-height: 1.7;
+    font-weight: 100;
+    width:80%;
+}
+/* -----------section3---------- */
+#design-content
+{
+    display:flex;
+    flex-direction: column-reverse;
+    font-family: "Overpass";
+    text-align: center;
+    width:90%;
+    margin: 0 auto;
+    overflow: hidden;
+}
+#design-content img
+{
+    width:150%;
+    transform: translate(-22.5vw, 0);
+}
+/* -------------footer----------- */
+footer
+{
+    background-color: rgb(40, 38, 43);
+    font-family: "Overpass";
+    font-size: 1.1em;
+    text-align: center;
+    border-radius:0 5em 0 0;
+    padding: 2em;
+    color:white;    
+}
+#footer-logo{margin-bottom: 3.5em; margin-top: 2.5em;}
+.foot-menu-title{margin-bottom: 1em;}
+.foot-menu{margin-bottom: 2em;}
+.foot-sub-menu
+{
+    line-height: 1.7;
+    opacity: 0.6;
+}
+
+.attribution
+{
+    color:white;
+    background-color: rgb(40, 38, 43);
+    text-align: center;
+}
+.attribution a
+{
+    color:white;
+}

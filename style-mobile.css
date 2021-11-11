@@ -35,11 +35,12 @@ header
 {
     position: absolute;
     top:5em;
+    left:5vw;
 
     display: none;
     text-align: center;
     background-color: white;
-    width:87.5%;
+    width:90vw;
     border-radius:0.5em;
     box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.507);
     font-family: "Overpass";
@@ -119,9 +120,9 @@ header
 }
 #intro-buttons-pannel
 {
-    padding-bottom: 8em;
+    padding-bottom: 10vw;
     display:flex;
-    justify-content: space-around;
+    justify-content: center;
 }
 #intro-start,#intro-learn-more
 {
@@ -136,6 +137,7 @@ header
 {
     background-color: white;
     color: hsl(353, 100%, 62%); 
+    margin-right: 2vw;
 }
 #intro-learn-more
 {
@@ -160,7 +162,7 @@ header
     display:flex;
     flex-direction: column-reverse;
 }
-.text-part
+#editor-content-text-part, #design-content-text-part
 {
     margin:2em 0 2em 0;
 }
@@ -201,6 +203,7 @@ header
     transform: translate(0em, -11.5em);
     margin: 0 auto;
     width: 100%;
+    max-width: 734px;
 }
 #second-text-container
 {
@@ -232,7 +235,7 @@ header
     margin: 0 auto;
     overflow: hidden;
 }
-#design-content img
+#laptop
 {
     width:150%;
     transform: translate(-22.5vw, 0);

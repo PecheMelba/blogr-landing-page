@@ -1,4 +1,4 @@
-@media all and (min-width: 950px)
+@media all and (min-width: 900px)
 {
     /* ----------------------------header--------------------------- */
     #menu-hamburger,#separator {display: none;}
@@ -143,10 +143,12 @@
     #editor-pannel
     {        
         padding-top: 7em;
-        overflow: hidden;
+        margin-bottom: 5vw;
+        margin-top: 5vw;
+
+        /* overflow: hidden; */
         width:100%;
         height:auto;
-        margin:0;
     }
     #editor-content
     {
@@ -157,18 +159,19 @@
         margin: 0 auto;  
     }
     h2 {font-size: 1.8em;}
-    .text-part
+    #editor-content-text-part
     {
-        padding-left: 10em;
+        padding-left: 10vw;
         text-align: left;
         margin:0;
-        width:40%;
+        width:50vw;
     }    
     picture{margin:0; height:45vw;}
     .img-section
     {
-        transform: translate(15em, -11em);
-        width:55vw;
+        transform: translate(8vw, -17vw);
+        /* width:55vw; */
+
     }
     .container-text-title {text-align: left; width:100%;}
     .container-text-p{width:100%;}
@@ -184,13 +187,13 @@
     }
     #phones
     {
-        transform: translate(8em, -5em);
+        transform: translate(10vw, -5vw);
         margin: 0 auto;
-        width: 40%;
+        width: 40vw;
     }
     #second-text-container
     {
-        transform: translate(42em, -30em);
+        transform: translate(47.5vw, -33vw);
         width:45%;
     }
     #second-title
@@ -211,7 +214,7 @@
     /* ----------------section3---------------- */
     #third-pannel
     {
-        width:90%;
+        width:100%;
         margin: 10em 0 7em 0;
     }
     #design-content
@@ -220,13 +223,22 @@
         flex-direction: row-reverse;
         align-items: center;
         width:100%;
+        overflow: visible;
+    }
+    #design-content-text-part
+    {
+        text-align: left;
+        margin-right: 2vw;
+        transform: translate(-10vw,0);
     }
     #laptop
     {
-        transform: translate(-12.5em,-4em);
-        width:100%;
+        transform: translate(-16.5vw,-4vw);
+        width:auto;
         height:50vw;
+        margin: 0;
     }
+
     /* ----------------footer------------ */
     footer
     {
@@ -239,10 +251,10 @@
     }
     #footer-logo
     {
-        margin-bottom: 3.5em;
+        margin-bottom: 5vw;
         margin-top: 0;
     }
-    #footer-logo, .foot-menu { margin-right: 10em;}
+    #footer-logo, .foot-menu { margin-right: 10vw;}
     .foot-sub-menu div {color:rgba(255, 255, 255, 0.801);}
     .foot-sub-menu div:hover
     {

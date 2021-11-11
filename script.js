@@ -8,10 +8,14 @@ function handleTabletChange(e)
   if (e.matches) //if viewports at least 950px wide
   { 
     isDesktopMode = true; 
+    document.getElementById("menu-hamburger").style.display = "none";
+    document.getElementById("menu-close-button").style.display = "none";
   }
-  else//if viewports less than 950px wide
+  else//if viewports less than 900px wide
   {     
     isDesktopMode = false;
+    document.getElementById("menu-hamburger").style.display = "inline";
+
   }
 }
 // Register event listener
@@ -64,7 +68,7 @@ for(currentMenu in MenuCategoryRefs)
         this.nextElementSibling.style.display = "block";
         this.children[1].style.transform = "rotate(180deg)";
       }
-      else 
+      else
       {
         this.nextElementSibling.style.display = "none";           
         this.children[1].style.transform = "rotate(0deg)";
